@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="text-center p-5 bg-light">Login Form</h2>
+        
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Email address:</label>
+                        <input type="email"
+                        class="form-control" placeholder="Enter your email">
+                        <div class="form-text">we'll never share your email with anyone else</div>  
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">password:</label>
+                            <input type="password" class="form-control" placeholder="enter password">
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input">
+                        <label  class="form-check-label">Check me out</label>
+                    </div>
+                    <button class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+      </div>
+
+      <!-- Html table-->
+       <div class="container">
+        <div class="row">
+            <table class="table">
+             <thead>
+               <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>job</th>
+                <th>company</th>
+               </tr>
+             </thead>
+               
+             <tbody>
+              <tr>
+                <td>1</td>
+                <td>het</td>
+                <td>Software Enginering</td>
+                <td>Google</td>
+               </tr>
+                <tr>
+                <td>2</td>
+                <td>dev</td>
+                <td>Software Enginering</td>
+                <td>microsoft</td>
+               </tr>
+             </tbody>
+            </table>
+        </div>
+       </div>
+        <!-- navigation-->
+         <nav class="nav mb-3 d-flex justify-content-center bg-primary">
+         <a href="#" class="nav-link text-light">Home</a>
+         <a href="#" class="nav-link text-light">About</a>
+         <a href="#" class="nav-link text-light">Services</a>
+         <a href="#" class="nav-link text-light">Contact</a>
+        </nav>
+
+        <!--slider copy code for bootstrap in navigation at carosel for search-->
+        <div id="carouselExampleIndicators" class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="1000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/h.jpg" class="d-block w-100" alt="mountain">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/see.jpg" class="d-block w-100" alt="see">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/stockMarket.jpg" class="d-block w-100" alt="graph">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
